@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard | CondoCare</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="videos/condovid.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <h2>CondoCare</h2>
+        <a href="Main.html" class="logout">Logout</a>
+    </header>
+
+    <aside>
+        <h3>Menu</h3>
+        <a href="staff-dashboard.html" class="active">Dashboard</a>
+        <a href="chatsupport.html" class="menu-link">
+        <span>☏</span> Chat Support</a>
+        <a href="#">Maintenance Request</a>
+        <a href="#">Manage Residents</a>
+        <a href="#">Announcement</a>
+        <a href="#">Staff Profile</a>
+        
+    </aside>
+    <main>
+        <h1>Welcome, Staff!</h1>
+        <p>Manage condominium maintenance operations here.</p>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Total Requests</h3>
+                <h2>25</h2>
+                <p>All submitted requests</p>
+            </div>
+
+             <div class="card">
+                <h3>Pending Requests</h3>
+                <h2>2</h2>
+                <p>Waiting for staff action</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed Requests</h3>
+                <h2>3</h2>
+                <p>Successfully Completed</p>
+            </div>
+
+             <div class="card">
+                <h3>Pending Requests</h3>
+                <h2>10</h2>
+                <p>Need staff attention</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed Requests</h3>
+                <h2>15</h2>
+                <p>Finished maintenance tasks</p>
+            </div>
+        </section>
+
+        <section class="content-box">
+            <h2>Recent Maintenance Requests</h2>
+            <table>
+                <tr>
+                   <th>Resident</th>
+                   <th>Request</th>
+                   <th>Date</th>
+                   <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Unit 101</td>
+                    <td>Water Leakage</td>
+                    <td>October 28, 2026</td>
+                    <td><span class="pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>Unit 205</td>
+                    <td>Ligth Repair</td>
+                    <td>October 25, 2026</td>
+                    <td><span class="completed">Completed</span></td>
+                </tr>
+                <tr>
+                    <td>Unit 302</td>
+                     <td>Air Conditioning</td>
+                    <td>October 24, 2026</td>
+                    <td><span class="pending">Pending</span></td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+</body>
+</html>
