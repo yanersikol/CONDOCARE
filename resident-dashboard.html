@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Dashboard | CondoCare</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="videos/condovid.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <h2>CondoCare</h2>
+        <a href="Main.html" class="logout">Logout</a>
+    </header>
+
+    <aside>
+        <h3>Menu</h3>
+        <a href="resident-dashboard.html" class="active">Dashboard</a>
+        <a href="#">Submit Maintenance Request</a>
+        <a href="#">My Request</a>
+        <a href="#">Announcement</a>
+        <a href="#">My Profile</a>
+    </aside>
+
+    <main>
+        <h1>Welcome, Resident!</h1>
+        <p>Manage your  unit and maintenance concerns here.</p>
+        <section class="cards">
+            <div class="card">
+                <h3>My Requests</h3>
+                <h2>5</h2>
+                <p>Total submitted requests</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending Requests</h3>
+                <h2>2</h2>
+                <p>Waiting for staff action</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed Requests</h3>
+                <h2>3</h2>
+                <p>Successfully Completed</p>
+            </div>
+        </section>
+
+        <section class="content-box">
+            <h2>Recent Maintenace Requests</h2>
+            <table>
+                <tr>
+                    <th>Requests</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Water Leakage</td>
+                    <td>October 28, 2026</td>
+                    <td><span class="pending">Pending</span></td>
+                </tr>
+            </table>
+
+    </main>
+</body>
+</html>
