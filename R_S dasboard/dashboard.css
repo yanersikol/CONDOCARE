@@ -4,11 +4,13 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body{
-    margin:0;
+body {
+    margin: 0;
     min-height: 100vh;
     background: transparent;
     isolation: isolate;
+    display: flex;
+    flex-direction: column;
 }
 #background-video{
     position:fixed;
@@ -29,15 +31,20 @@ body::before {
     pointer-events: none;
 }
 
-header{
+header {
     height: 80px;
-    padding:0 30px;
+    padding: 0 30px;
     background: rgba(25,45,70,0.85);
     backdrop-filter: blur(12px);
-    color:white;
-    display:flex;
+    color: white;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
+}
+.layout {
+    display: flex;
+    align-items: stretch;
 }
 header h2{
     font-size: 25px;
@@ -49,16 +56,14 @@ header h2{
     padding: 11px 22px;
     border-radius: 8px;
 }
-aside{
-    position:fixed;
-    top: 80px;
-    left: 0px;
+aside {
+    position: static;
     width: 250px;
+    min-height: calc(100vh - 80px);
     background: rgba(20,39,62,0.88);
     backdrop-filter: blur(15px);
     padding: 30px 15px;
-    overflow-y: auto;
-    z-index: 10;
+    flex-shrink: 0;
 }
 aside h3{
     color: white;
@@ -78,8 +83,10 @@ aside a:hover, aside a.active{
     background: rgba(112,161,205,0.35);
     color:white;
 }
-main{
-    margin-left: 250px;
+main {
+    flex: 1;
+    min-width: 0;
+    margin-left: 0;
     padding: 40px;
 }
 main h1{
@@ -170,8 +177,8 @@ td {
         width: 180px;
     }
     main{
-        margin-left: 100px;
-        padding: 20px;
+        margin-left: 180px;
+        padding: 110px 20px 20px;
     }
     
 }
