@@ -1,61 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login | CondoCare</title>
-    <link rel="icon" type="image/png" href="images/CC.png">
+
+    <link rel="icon" type="image/png" href="images/logoweb.png">
     <link rel="stylesheet" href="stylesheet.css">
-     
 </head>
 
-    <body>
-        <div class="login-container">
+<body>
 
-        <img src="images/CClogo.png" alt="CondoCare Logo" class="logo">
+<div class="login-page">
 
-        <div class="login-box">
-        <h1>CONDOCARE</h1>
-        <p class ="subtitle">Condominium Maintenance Management System</p>
-        <h2>Welcome Back!</h2>
-        <p class="subtitle">Log in to access your account.</p>
+    <div class="background-overlay"></div>
 
-        <label for="accountType">Login As</label>
+    <div class="top-logo">
+        <img src="images/logoweb.png" alt="CondoCare Logo">
+    </div>
 
-            <select id="accountType" onchange="changeLoginFields()">
-                <option value="customer">Resident</option>
-                <option value="staff">Staff</option>
-            </select>
-
-        <form id="loginForm">
-            <div class="input-box">
-                <label id="idLabel" for="userID">Unit Number:</label>
-
-                <input type="text" id= "userID" placeholder="Enter your unit number" required>
-            </div>
-
-             <div class="input-box">
-                <label id="codeLabel" for="usercode">Resident Code:</label>
-                <input type="text" id= "usercode" placeholder="enter your resident code" required>
-            </div>
-
-             <div class="input-box">
-                <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password" required>
-                <a href="#">Forgot password?</a>
-            </div>
-
-            <button type="submit">LOGIN</button>
-
-            <p id="errorMessage"></p>
-        </form>
-
-        <p class="signup">
-            Don't have an account?
-            <a href="#">Register here</a>
+    <div class="left-decoration"></div>
+    <div class="welcome-content">
+        <p class="welcome-line"></p>
+        <p class="welcome-small">WELCOME TO</p>
+        <h1>AVISÉLE'S</h1>
+        <h2>MAINTENANCE MANAGEMENT SYSTEM</h2>
+        <p class="welcome-text">
+            Comfortable living. Better community.
         </p>
+    </div>
 
+    <div class="login-section">
+        <a href="index.html" class="home-button"> ← Back to Homepage </a>
+       
+        <div class="login-box">
+            <div class="login-header">
+                <h1>CONDOCARE</h1>
+                <div class="gold-line"></div>
+                <p class="system-title">Condominium Maintenance Management System </p>
+            </div>
+            <h2>Welcome Back!</h2>
+            <p class="subtitle">Log in to access your account.</p>
+
+            <form id="loginForm">
+
+                <div class="input-box">
+                    <label for="accountType">Login As</label>
+                    <select id="accountType" onchange="changeLoginFields()">
+                        <option value="resident">Resident</option>
+                        <option value="staff">Staff</option>
+
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label id="idLabel" for="userID"> Unit Number</label>
+                    <input
+                        type="text"
+                        id="userID"
+                        placeholder="Enter your unit number"
+                        required>
+                </div>
+
+                <div class="input-box">
+                    <label id="codeLabel" for="usercode">Resident Code</label>
+                    <input
+                        type="text"
+                        id="usercode"
+                        placeholder="Enter your resident code"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required>
+                    <a href="#" class="forgot-password">
+                        Forgot password?
+                    </a>
+
+                </div>
+
+                <button type="submit">LOGIN</button>
+
+
+                <p id="errorMessage"></p>
+            </form>
+
+            <p class="signup">
+                Don't have an account?
+                <a href="#">Register here</a>
+            </p>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
 </html>
